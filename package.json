@@ -1,0 +1,17 @@
+{
+    "name": "unist-util-split",
+    "version": "0.1.0",
+    "description": "unist utility to replace a node with several",
+    "license": "MIT",
+    "type": "module",
+    "types": "index.d.ts",
+    "files": [
+      "index.d.ts",
+      "index.js"
+    ],
+    "dependencies": {
+        "@types/unist": "^2.0.0"
+    },
+    "devDependencies": {
+    }
+}

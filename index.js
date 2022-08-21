@@ -1,4 +1,7 @@
-import {Node, Parent} from 'unist'
+/**
+ * @typedef {import('unist').Node} Node
+ * @typedef {import('unist').Parent} Parent
+ */
 
 /**
  * Replaces `node` with replacement in `parents` children
@@ -14,6 +17,6 @@ export function split(node, parent, replacement) {
     let i = 0
     while (parent.children[i] !== node && i < plen) i++;
     if (i === plen) return -1
-    parent.children.splice(i, 1, replacement)
+    parent.children.splice(i, 1, ...replacement)
     return i + replacement.length
 }

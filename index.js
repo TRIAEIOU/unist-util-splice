@@ -10,7 +10,7 @@
  * @param {Node|Node[]} replacement for node
  * @returns {Number} index of end of replacement or -1
  */
-export function split(node, parent, replacement) {
+export function splice(node, parent, replacement) {
     if (!parent?.children.length) return -1
     if (!Array.isArray(replacement)) replacement = [replacement]
     const plen = parent.children.length
